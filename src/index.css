@@ -15,27 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-.AppBar {
-  text-align: center;
-  background-color: rgb(118, 69, 128);
-  color: white;
-}
-.AppBar ul {
-  display: flex;
-  list-style: none;
-}
-.AppBar li :link {
-  display: block;
-  text-decoration: none;
-  color: black;
-  background-color: rgb(164, 126, 172);
-  padding: 1rem 1rem;
-}
-.AppBar li :hover {
-  background-color: rgb(232, 203, 238);
-}

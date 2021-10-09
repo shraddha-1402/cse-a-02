@@ -1,0 +1,14 @@
+.AppBar_TitleBar {
+  display: flex;
+}
+
+.AppBar_TitleBar img {
+  background-color: blue;
+  height: 4rem;
+  width: 4rem;
+}
+
+.AppBar_TitleBar h1 {
+  text-align: center;
+  margin: auto;
+}
