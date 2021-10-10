@@ -3,10 +3,13 @@ export default function KeyValueElement(props: {
   value: string;
 }) {
   return (
-    <>
-      <label htmlFor={props.title}>{props.title}</label>
-      <span id={props.title}>{props.value}</span>
-      <br />
-    </>
+    <tr className="KeyValueElement">
+      <td>
+        <label htmlFor={props.title}>{props.title}</label>
+      </td>
+      <td>
+        <span id={props.title}>{props.value}</span>
+      </td>
+    </tr>
   );
 }

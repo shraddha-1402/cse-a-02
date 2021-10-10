@@ -15,12 +15,16 @@ function App() {
     useState<ProjectData>(projectDataPreset);
   useEffect(() => {
     // setUser({ name: "userName" });
-    console.log(projectData);
+    // console.log(projectData);
     return () => {};
   }, [projectData]);
   return (
     <>
-      <NavBar setPageBody={setPageBody} username={user.name} />
+      <NavBar
+        pageBody={pageBody}
+        setPageBody={setPageBody}
+        username={user.name}
+      />
       {pageBody === "ModifyProjectDetails" && (
         <ModifyProjectDetails
           title={"Modify Project Details"}
@@ -41,7 +45,10 @@ function App() {
         />
       )}
       {pageBody === "ViewProjectStatus" && (
-        <ViewProjectStatus data={"View Project Status"} />
+        <ViewProjectStatus
+          title={"View Project Status"}
+          projectData={projectData}
+        />
       )}
       {/* <ViewProjectDetails username={projectData.name} /> */}
     </>

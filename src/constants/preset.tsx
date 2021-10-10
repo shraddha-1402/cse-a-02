@@ -1,4 +1,6 @@
-export const projectDataPreset = {
+import { ProjectData } from "../types/main";
+
+export const projectDataPreset: ProjectData = {
   name: "name",
   type: "type",
   numberOfMembers: 4,
@@ -12,8 +14,10 @@ export const projectDataPreset = {
   rules: {
     maxMembers: 4,
   },
+  superGuide: "",
+  suggestionsBySuperGuide: "",
 };
-export const projectDataPresetNull = {
+export const projectDataPresetNull: ProjectData = {
   name: "",
   type: "",
   numberOfMembers: 1,
@@ -27,5 +31,7 @@ export const projectDataPresetNull = {
   rules: {
     maxMembers: 4,
   },
+  superGuide: "",
+  suggestionsBySuperGuide: "",
 };
 export const user = { name: "userName" };

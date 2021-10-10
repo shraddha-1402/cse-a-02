@@ -1,37 +1,45 @@
-import {
-  ReactElement,
-  JSXElementConstructor,
-  ReactNodeArray,
-  ReactPortal,
-} from "react";
-import "./NavBar.css";
+import "./../../styles/App.css";
 
 import Tab from "./Tab";
 
 function NavBar(props: {
-  username:
-    | string
-    | number
-    | boolean
-    | {}
-    | ReactElement<any, string | JSXElementConstructor<any>>
-    | ReactNodeArray
-    | ReactPortal
-    | null
-    | undefined;
+  pageBody: string;
+  username: string;
   setPageBody: { (arg0: any): void; (arg0: any): void; (arg0: any): void };
 }) {
+  // console.log(props.pageBody);
   return (
-    <>
+    <div className="navBar">
       <div className="AppBar_TitleBar">
         <img src="logo.png" alt="" />
         <h1>Welcome {props.username}</h1>
       </div>
-      <Tab tabName={"ModifyProjectDetails"} setPageBody={props.setPageBody} />
-      <Tab tabName={"UploadProjectDetails"} setPageBody={props.setPageBody} />
-      <Tab tabName={"ViewProjectDetails"} setPageBody={props.setPageBody} />
-      <Tab tabName={"ViewProjectStatus"} setPageBody={props.setPageBody} />
-    </>
+      <div className="tabBar">
+        <div className="tabs-list">
+          <Tab
+            pageBody={props.pageBody}
+            tabName={"ModifyProjectDetails"}
+            setPageBody={props.setPageBody}
+          />
+          <Tab
+            pageBody={props.pageBody}
+            tabName={"UploadProjectDetails"}
+            setPageBody={props.setPageBody}
+          />
+          <Tab
+            pageBody={props.pageBody}
+            tabName={"ViewProjectDetails"}
+            setPageBody={props.setPageBody}
+          />
+          <Tab
+            pageBody={props.pageBody}
+            tabName={"ViewProjectStatus"}
+            setPageBody={props.setPageBody}
+          />
+        </div>
+        <div className="userAvatar">SN</div>
+      </div>
+    </div>
   );
 }
 export default NavBar;

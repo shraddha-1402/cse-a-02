@@ -8,6 +8,8 @@ export type ProjectData = {
   docFile: string;
   pptFile: string;
   suggestionsByGuide: string;
+  superGuide: string;
+  suggestionsBySuperGuide: string;
   approved: boolean;
   rules: {
     maxMembers: number;
