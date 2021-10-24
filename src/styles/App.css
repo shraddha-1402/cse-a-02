@@ -111,6 +111,10 @@ table {
   margin: auto;
 }
 
+.signup-login-route a {
+  color: lightblue;
+}
+
 /* .App {
   text-align: center;
 }

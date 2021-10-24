@@ -1,8 +1,9 @@
 import { ProjectData } from "../../types/main";
 import "./../../styles/routes/login-signup/index.css";
 import headerImg from "../../assets/images/header.jpg";
+import { Link } from "react-router-dom";
 
-export default function SignIn(props: {
+export default function LogIn(props: {
   title: string;
   projectData: ProjectData;
 }) {
@@ -10,25 +11,21 @@ export default function SignIn(props: {
     <div className="signup-login-route">
       <main>
         <header>
-          {/* <!-- <img src="./images/logo.jpg" alt=""> */}
-          {/* <h2 id="projectName">Project Approval System</h2> */}
-          {/* <h3 id="tagling">Get approved right now</h3> --> */}
-          <img src={headerImg} alt="" />
+          <img src={headerImg} alt="header_image" />
         </header>
         <div>Please enter your login and password</div>
         <form action="" method="post">
           <h1>Log in</h1>
           <div>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Username </label>
             <input type="text" id="username" />
           </div>
           <div>
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password </label>
             <input type="text" id="password" />
           </div>
-          <a href="/forgotPassword.html" target="_blank">
-            Forgot password?
-          </a>
+          Don't have an account?
+          <Link to="/SignUp">Sign Up</Link>
           <br />
           <button type="submit">Log in</button>
           <br />
