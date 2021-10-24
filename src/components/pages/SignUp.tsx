@@ -7,10 +7,6 @@ export default function SignUp() {
       <main>
         <header>
           <img src={headerImg} alt="header_image" />
-          {/* <!-- <img src="./images/logo.jpg" alt="">
-      <h2 id="projectName">Project Approval System</h2>
-      <h3 id="tagling">Get approved right now</h3> --> */}
-          {/* <img src="./images/header.jpg" alt="" /> */}
         </header>
         <div>Please enter your signup credentials</div>
         <form action="" method="post">
