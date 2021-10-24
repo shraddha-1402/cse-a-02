@@ -19,7 +19,7 @@ function UploadProjectDetails(props: {
   function submitHandler(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
     props.setProjectData(formData);
-    console.log(formData);
+    alert("Form submitted");
   }
   return (
     <>
@@ -80,14 +80,16 @@ function UploadProjectDetails(props: {
               }}
             />
           </tbody>
+          <tbody>
+            <button
+              className="submit-button"
+              type="submit"
+              onClick={(e) => submitHandler(e)}
+            >
+              Upload
+            </button>
+          </tbody>
         </table>
-        <button
-          className="submit-button"
-          type="submit"
-          onClick={(e) => submitHandler(e)}
-        >
-          Modify
-        </button>
       </form>
     </>
   );

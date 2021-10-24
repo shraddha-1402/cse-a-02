@@ -1,3 +1,4 @@
+import "../styles/FormElement.css";
 export default function FormElement(props: {
   title: string;
   type?: React.HTMLInputTypeAttribute;

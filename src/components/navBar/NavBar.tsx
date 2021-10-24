@@ -1,5 +1,5 @@
 import "./../../styles/App.css";
-
+import logo from "../../assets/images/logo.jpg";
 import Tab from "./Tab";
 
 function NavBar(props: {
@@ -11,7 +11,7 @@ function NavBar(props: {
   return (
     <div className="navBar">
       <div className="AppBar_TitleBar">
-        <img src="logo.png" alt="" />
+        <img src={logo} alt="asd" />
         <h1>Welcome {props.username}</h1>
       </div>
       <div className="tabBar">
