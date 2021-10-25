@@ -35,19 +35,6 @@ body {
   border-radius: 0.5rem;
 }
 
-.userAvatar {
-  background-color: rgb(233, 208, 233);
-  height: 3rem;
-  width: 3rem;
-  border-radius: 3rem;
-  margin-right: 0.5rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
 .pageTitle {
   text-align: center;
 }

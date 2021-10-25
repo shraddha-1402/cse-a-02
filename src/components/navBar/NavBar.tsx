@@ -1,13 +1,13 @@
-import "./../../styles/App.css";
+import "./navBar.css";
 import logo from "../../assets/images/logo.jpg";
 import Tab from "./Tab";
+import { useState } from "react";
 
 function NavBar(props: {
   pageBody: string;
   username: string;
   setPageBody: { (arg0: any): void; (arg0: any): void; (arg0: any): void };
 }) {
-  // console.log(props.pageBody);
   return (
     <div className="navBar">
       <div className="AppBar_TitleBar">
@@ -37,8 +37,22 @@ function NavBar(props: {
             setPageBody={props.setPageBody}
           />
         </div>
-        <div className="userAvatar">SN</div>
+        <UserAvatar>
+          <button className="dropdown">Log Out</button>
+        </UserAvatar>
       </div>
+    </div>
+  );
+}
+function UserAvatar(params: any) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="nav-item">
+      <button className="dropdown-trigger" onClick={() => setOpen(!open)}>
+        <span>SN</span>
+      </button>
+      {open && params.children}
+      {/* {params.children} */}
     </div>
   );
 }
