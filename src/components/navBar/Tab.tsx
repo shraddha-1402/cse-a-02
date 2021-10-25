@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Tab(props: {
   setPageBody: (arg0: any) => void;
   tabName: string;

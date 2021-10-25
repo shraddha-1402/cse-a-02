@@ -20,7 +20,7 @@ export function Student() {
       <NavBar
         pageBody={pageBody}
         setPageBody={setPageBody}
-        username={user.name}
+        username={`${user.name.first} ${user.name.last}`}
       />
       {pageBody === "ModifyProjectDetails" && (
         <ModifyProjectDetails

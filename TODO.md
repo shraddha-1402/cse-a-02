@@ -1,7 +1,9 @@
 - [ ] /student?id=12u43096
-- [ ] contents
+- [ ] SN profile ball pop up for sign out
+- [x] `Welcome {firstname} {lastname}`
+
+- [x] contents
   - [x] center align
   - [x] scrollable
-  - [ ] inside a translucent box
-- [ ] SN profile ball pop up for sign out
+  - [x] inside a translucent box
 - [x] use LogIn/SignUp/LogOut

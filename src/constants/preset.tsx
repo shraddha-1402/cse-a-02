@@ -34,4 +34,9 @@ export const projectDataPresetNull: ProjectData = {
   superGuide: "",
   suggestionsBySuperGuide: "",
 };
-export const user = { name: "userName" };
+export const user = {
+  name: {
+    first: "FirstName",
+    last: "LastName",
+  },
+};

@@ -52,10 +52,6 @@ body {
   text-align: center;
 }
 
-form {
-  padding: 1rem;
-}
-
 label {
   font-weight: bold;
 }
@@ -108,11 +104,25 @@ label {
 }
 
 table {
+  background-color: rgb(230, 184, 241);
+  padding: 1rem;
   margin: auto;
+  /* border: solid; */
+  border-radius: 1rem;
 }
 
 .signup-login-route a {
   color: lightblue;
+}
+td > label {
+  /* background-color: aqua; */
+  padding-right: 4rem;
+}
+
+form > button {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 /* .App {
