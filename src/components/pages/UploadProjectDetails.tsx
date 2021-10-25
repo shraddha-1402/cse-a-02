@@ -80,16 +80,14 @@ function UploadProjectDetails(props: {
               }}
             />
           </tbody>
-          <tbody>
-            <button
-              className="submit-button"
-              type="submit"
-              onClick={(e) => submitHandler(e)}
-            >
-              Upload
-            </button>
-          </tbody>
         </table>
+        <button
+          className="submit-button"
+          type="submit"
+          onClick={(e) => submitHandler(e)}
+        >
+          Upload
+        </button>
       </form>
     </>
   );

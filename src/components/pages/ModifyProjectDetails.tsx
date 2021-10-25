@@ -83,16 +83,14 @@ function ModifyProjectDetails(props: {
               </td>
             </tr> */}
           </tbody>
-          <tbody>
-            <button
-              className="submit-button"
-              type="submit"
-              onClick={(e) => submitHandler(e)}
-            >
-              Modify
-            </button>
-          </tbody>
         </table>
+        <button
+          className="submit-button"
+          type="submit"
+          onClick={(e) => submitHandler(e)}
+        >
+          Modify
+        </button>
       </form>
     </>
   );
