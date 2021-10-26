@@ -1,8 +1,33 @@
+.navBar {
+  background-color: rgb(124, 54, 124);
+}
+.navBar h1 {
+  color: white;
+}
+.AppBar_TitleBar {
+  display: flex;
+}
+.AppBar_TitleBar img {
+  background-color: rgb(209, 0, 209);
+  height: 4rem;
+  width: 4rem;
+}
+.AppBar_TitleBar h1 {
+  text-align: center;
+  margin: auto;
+}
+.tabBar {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-list {
+  background-color: rgb(160, 105, 160);
+  border-radius: 0.5rem;
+}
 .nav-item {
   overflow: visible;
   height: 3rem;
 }
-
 .dropdown-trigger {
   background-color: rgb(233, 208, 233);
   border-radius: 50%;
@@ -15,7 +40,6 @@
   width: 3rem;
   height: 3rem;
 }
-
 .dropdown {
   position: relative;
   transform: translateY(-3rem);
@@ -34,7 +58,6 @@
   border: 0.6rem solid transparent;
   right: 10%;
 }
-
 .dropdown:before {
   border-bottom-color: rgb(125, 60, 155);
   top: -1.3rem;
