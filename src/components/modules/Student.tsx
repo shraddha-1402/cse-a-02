@@ -21,6 +21,12 @@ export function Student() {
         pageBody={pageBody}
         setPageBody={setPageBody}
         username={`${user.name.first} ${user.name.last}`}
+        tabsList={[
+          "ModifyProjectDetails",
+          "UploadProjectDetails",
+          "ViewProjectDetails",
+          "ViewProjectStatus",
+        ]}
       />
       {pageBody === "ModifyProjectDetails" && (
         <ModifyProjectDetails

@@ -7,6 +7,7 @@ function NavBar(props: {
   pageBody: string;
   username: string;
   setPageBody: { (arg0: any): void; (arg0: any): void; (arg0: any): void };
+  tabsList: string[];
 }) {
   return (
     <div className="navBar">
@@ -16,26 +17,14 @@ function NavBar(props: {
       </div>
       <div className="tabBar">
         <div className="tabs-list">
-          <Tab
-            pageBody={props.pageBody}
-            tabName={"ModifyProjectDetails"}
-            setPageBody={props.setPageBody}
-          />
-          <Tab
-            pageBody={props.pageBody}
-            tabName={"UploadProjectDetails"}
-            setPageBody={props.setPageBody}
-          />
-          <Tab
-            pageBody={props.pageBody}
-            tabName={"ViewProjectDetails"}
-            setPageBody={props.setPageBody}
-          />
-          <Tab
-            pageBody={props.pageBody}
-            tabName={"ViewProjectStatus"}
-            setPageBody={props.setPageBody}
-          />
+          {props.tabsList.map((name) => (
+            <Tab
+              key={name}
+              pageBody={props.pageBody}
+              tabName={name}
+              setPageBody={props.setPageBody}
+            />
+          ))}
         </div>
         <UserAvatar>
           <button className="dropdown">Log Out</button>

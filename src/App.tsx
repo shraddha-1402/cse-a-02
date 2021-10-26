@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles/App.css";
-import { Student } from "./components/routes/Student";
-import LoginSignup from "./components/routes/LoginSignup";
+import { Student } from "./components/modules/Student";
+import LoginSignup from "./components/modules/LoginSignup";
 import LogIn from "./components/pages/LogIn";
 import { projectDataPreset } from "./constants/preset";
 import SignUp from "./components/pages/SignUp";
+import Admin from "./components/modules/Admin";
 export default function App() {
   return (
     <div>
@@ -19,6 +20,9 @@ export default function App() {
           </Route>
           <Route path="/student">
             <Student />
+          </Route>
+          <Route path="/admin">
+            <Admin />
           </Route>
           <Route path="/login-signup">
             <LoginSignup />
