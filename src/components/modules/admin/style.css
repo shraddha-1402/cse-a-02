@@ -5,3 +5,8 @@
 .admin-dashboard > table {
   margin: 1rem;
 }
+
+.admin-dashboard > table > thead,
+.admin-dashboard > table > tbody {
+  background-color: white;
+}
