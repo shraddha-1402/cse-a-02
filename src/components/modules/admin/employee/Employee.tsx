@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { ProjectData } from "../../../types/main";
-import TabBar from "../../navBar/TabBar";
-import AddEmployee from "./employee/AddEmployee";
+import { ProjectData } from "../../../../types/main";
+import TabBar from "../../../navBar/TabBar";
+import AddEmployee from "./AddEmployee";
 
 export default function Employee(props: {
   projectData: ProjectData;

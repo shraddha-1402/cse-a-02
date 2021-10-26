@@ -5,7 +5,7 @@ import NavBar from "../navBar/NavBar";
 import "./../../styles/routes/student/index.css";
 import DashBoard from "./admin/DashBoard";
 import EditStudentDetails from "./admin/EditStudentDetails";
-import Employee from "./admin/Employee";
+import Employee from "./admin/employee/Employee";
 import Role from "./admin/Role";
 import "./admin/style.css";
 export default function Admin() {
