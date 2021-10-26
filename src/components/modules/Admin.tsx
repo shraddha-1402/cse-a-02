@@ -7,6 +7,7 @@ import DashBoard from "./admin/DashBoard";
 import EditStudentDetails from "./admin/EditStudentDetails";
 import Employee from "./admin/Employee";
 import Role from "./admin/Role";
+import "./admin/style.css";
 export default function Admin() {
   const [pageBody, setPageBody] = useState("DashBoard");
 
@@ -24,34 +25,36 @@ export default function Admin() {
         username={`${user.name.first} ${user.name.last}`}
         tabsList={tabList}
       />
-      {pageBody === "DashBoard" && (
-        <DashBoard
-          title={pageBody}
-          projectData={projectData}
-          setProjectData={setProjectData}
-        />
-      )}
-      {pageBody === "Employee" && (
-        <Employee
-          title={pageBody}
-          projectData={projectData}
-          setProjectData={setProjectData}
-        />
-      )}
-      {pageBody === "EditStudentDetails" && (
-        <EditStudentDetails
-          title={pageBody}
-          projectData={projectData}
-          setProjectData={setProjectData}
-        />
-      )}
-      {pageBody === "Role" && (
-        <Role
-          title={pageBody}
-          projectData={projectData}
-          setProjectData={setProjectData}
-        />
-      )}
+      <div className="admin-body">
+        {pageBody === "DashBoard" && (
+          <DashBoard
+            title={pageBody}
+            projectData={projectData}
+            setProjectData={setProjectData}
+          />
+        )}
+        {pageBody === "Employee" && (
+          <Employee
+            title={pageBody}
+            projectData={projectData}
+            setProjectData={setProjectData}
+          />
+        )}
+        {pageBody === "EditStudentDetails" && (
+          <EditStudentDetails
+            title={pageBody}
+            projectData={projectData}
+            setProjectData={setProjectData}
+          />
+        )}
+        {pageBody === "Role" && (
+          <Role
+            title={pageBody}
+            projectData={projectData}
+            setProjectData={setProjectData}
+          />
+        )}
+      </div>
     </div>
   );
 }

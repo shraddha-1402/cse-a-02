@@ -1,0 +1,7 @@
+.admin-body {
+  display: flex;
+  justify-content: center;
+}
+.admin-dashboard > table {
+  margin: 1rem;
+}
