@@ -1,19 +1,19 @@
 import { ChangeEvent } from "react";
-import FormElement from "../../../FormElement";
+import EditableElement from "../../../components/formElements/EditableElement";
 
 export default function AddEmployee() {
   return (
     <form action="">
       <table>
         <tbody>
-          <FormElement
+          <EditableElement
             title={"Name"}
             inputValue={undefined}
             onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
               throw new Error("Function not implemented.");
             }}
           />
-          <FormElement
+          <EditableElement
             title={"Date Of Birth"}
             inputValue={undefined}
             type={"date"}
@@ -21,7 +21,7 @@ export default function AddEmployee() {
               throw new Error("Function not implemented.");
             }}
           />
-          <FormElement
+          <EditableElement
             title={"Email"}
             inputValue={undefined}
             type="email"

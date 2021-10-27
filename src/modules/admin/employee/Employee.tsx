@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ProjectData } from "../../../../types/main";
-import TabBar from "../../../navBar/TabBar";
+import { ProjectData } from "../../../types/main";
+import TabBar from "../../../components/navBar/TabBar";
 import AddEmployee from "./AddEmployee";
 import DeleteEmployee from "./DeleteEmployee";
 import EditEmployee from "./EditEmployee";
@@ -15,11 +15,13 @@ export default function Employee(props: {
   return (
     <div>
       <h1>{props.title}</h1>
-      <TabBar
-        tabsList={tabsList}
-        pageBody={employeeFunction}
-        setPageBody={setEmployeeFunction}
-      />
+      <div>
+        <TabBar
+          tabsList={tabsList}
+          pageBody={employeeFunction}
+          setPageBody={setEmployeeFunction}
+        />
+      </div>
       {employeeFunction === "AddEmployee" && <AddEmployee />}
       {employeeFunction === "EditEmployee" && <EditEmployee />}
       {employeeFunction === "DeleteEmployee" && <DeleteEmployee />}

@@ -23,6 +23,7 @@
 .tabs-list {
   background-color: rgb(160, 105, 160);
   border-radius: 0.5rem;
+  width: fit-content;
 }
 .nav-item {
   overflow: visible;

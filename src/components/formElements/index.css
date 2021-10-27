@@ -1,0 +1,10 @@
+.EditableElement td,
+.ConstantElement td {
+  padding: 1rem;
+}
+
+.EditableElement input {
+  width: 10rem;
+  padding: 0.5rem;
+  border: 0;
+}

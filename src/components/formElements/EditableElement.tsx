@@ -1,4 +1,5 @@
-export default function FormElement(props: {
+import "./index.css";
+export default function EditableElement(props: {
   title: string;
   type?: React.HTMLInputTypeAttribute;
   min?: number;
@@ -7,7 +8,7 @@ export default function FormElement(props: {
   onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any;
 }) {
   return (
-    <tr className="FormElement">
+    <tr className="EditableElement">
       <td>
         <label htmlFor={props.type === "file" ? "" : props.title}>
           {props.title}

@@ -1,5 +1,5 @@
 import { ProjectData } from "../../types/main";
-import "./../../styles/routes/login-signup/index.css";
+import "./index.css";
 import headerImg from "../../assets/images/header.jpg";
 import { Link } from "react-router-dom";
 

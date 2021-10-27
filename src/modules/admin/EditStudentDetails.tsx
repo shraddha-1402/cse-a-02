@@ -1,4 +1,4 @@
-import { ProjectData } from "../../../types/main";
+import { ProjectData } from "../../types/main";
 
 export default function EditStudentDetails(props: {
   projectData: ProjectData;

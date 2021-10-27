@@ -1,9 +1,10 @@
-export default function KeyValueElement(props: {
+import "./index.css";
+export default function ConstantElement(props: {
   title: string;
   value: string;
 }) {
   return (
-    <tr className="KeyValueElement">
+    <tr className="ConstantElement">
       <td>
         <label htmlFor={props.title}>{props.title}</label>
       </td>

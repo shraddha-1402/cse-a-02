@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
-import { ProjectData } from "../../../types/main";
-import FormElement from "../../FormElement";
+import { ProjectData } from "../../types/main";
+import EditableElement from "../../components/formElements/EditableElement";
 
 export default function DashBoard(props: {
   projectData: ProjectData;
@@ -45,7 +45,7 @@ export default function DashBoard(props: {
       <form action="">
         <table>
           <tbody>
-            <FormElement
+            <EditableElement
               title={"Group number"}
               inputValue={undefined}
               type="number"

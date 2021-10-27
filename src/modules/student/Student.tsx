@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { projectDataPreset, user } from "../../constants/preset";
 import { ProjectData } from "../../types/main";
-import NavBar from "../navBar/NavBar";
-import ModifyProjectDetails from "../pages/ModifyProjectDetails";
-import UploadProjectDetails from "../pages/UploadProjectDetails";
-import ViewProjectDetails from "../pages/ViewProjectDetails";
-import ViewProjectStatus from "../pages/ViewProjectStatus";
-import "./../../styles/routes/student/index.css";
+import NavBar from "../../components/navBar/NavBar";
+import ModifyProjectDetails from "./ModifyProjectDetails";
+import UploadProjectDetails from "./UploadProjectDetails";
+import ViewProjectDetails from "./ViewProjectDetails";
+import ViewProjectStatus from "./ViewProjectStatus";
+import "./index.css";
 export function Student() {
   const [pageBody, setPageBody] = useState("ModifyProjectDetails");
 

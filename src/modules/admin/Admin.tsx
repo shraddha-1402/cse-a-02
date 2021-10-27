@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { projectDataPreset, user } from "../../constants/preset";
 import { ProjectData } from "../../types/main";
-import NavBar from "../navBar/NavBar";
-import "./../../styles/routes/student/index.css";
-import DashBoard from "./admin/DashBoard";
-import EditStudentDetails from "./admin/EditStudentDetails";
-import Employee from "./admin/employee/Employee";
-import Role from "./admin/Role";
-import "./admin/style.css";
+import NavBar from "../../components/navBar/NavBar";
+import "./style.css";
+import DashBoard from "./DashBoard";
+import EditStudentDetails from "./EditStudentDetails";
+import Employee from "./employee/Employee";
+import Role from "./Role";
 export default function Admin() {
   const [pageBody, setPageBody] = useState("DashBoard");
 

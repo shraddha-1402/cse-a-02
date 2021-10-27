@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
-import { ProjectData } from "../../../types/main";
-import FormElement from "../../FormElement";
+import { ProjectData } from "../../types/main";
+import EditableElement from "../../components/formElements/EditableElement";
 
 export default function Role(props: {
   projectData: ProjectData;
@@ -13,42 +13,42 @@ export default function Role(props: {
       <form action="">
         <table>
           <tbody>
-            <FormElement
+            <EditableElement
               title={"Username"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
+            <EditableElement
               title={"Stream"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
+            <EditableElement
               title={"Academic year"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
+            <EditableElement
               title={"Semester"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
+            <EditableElement
               title={"Department"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
+            <EditableElement
               title={"Role"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {

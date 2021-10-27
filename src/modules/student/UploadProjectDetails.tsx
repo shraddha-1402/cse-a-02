@@ -1,13 +1,21 @@
 import { ChangeEvent, useState } from "react";
+import { projectDataPresetNull } from "../../constants/preset";
 import { ProjectData } from "../../types/main";
-import "../../styles/App.css";
-import FormElement from "../FormElement";
-function ModifyProjectDetails(props: {
-  projectData: ProjectData;
+import EditableElement from "../../components/formElements/EditableElement";
+// import { projectDataPreset } from "../../constants/preset";
+function UploadProjectDetails(props: {
   setProjectData: React.Dispatch<React.SetStateAction<ProjectData>>;
   title: string;
 }) {
-  const [formData, setFormData] = useState(props.projectData);
+  const [formData, setFormData] = useState(projectDataPresetNull);
+  // useEffect(() => {
+  //   // Object.keys(formData).forEach((k) => {
+  //     // formData[k] = undefined;
+  //   });
+  //   return () => {
+  //     // cleanup
+  //   };
+  // }, []);
   function submitHandler(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
     props.setProjectData(formData);
@@ -19,21 +27,21 @@ function ModifyProjectDetails(props: {
       <form action="">
         <table>
           <tbody>
-            <FormElement
+            <EditableElement
               title="Name of project: "
               inputValue={formData.name}
               onInputChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
               }
             />
-            <FormElement
+            <EditableElement
               title="Type of project: "
               inputValue={formData.type}
               onInputChange={(e) =>
                 setFormData({ ...formData, type: e.target.value })
               }
             />
-            <FormElement
+            <EditableElement
               title="Number of members: "
               type={"number"}
               inputValue={formData.numberOfMembers}
@@ -46,14 +54,14 @@ function ModifyProjectDetails(props: {
                 })
               }
             />
-            <FormElement
+            <EditableElement
               title="Cause: "
               inputValue={formData.cause}
               onInputChange={(e) =>
                 setFormData({ ...formData, cause: e.target.value })
               }
             />
-            <FormElement
+            <EditableElement
               title="Technologies used: "
               inputValue={formData.techUsed}
               onInputChange={(e) =>
@@ -63,25 +71,14 @@ function ModifyProjectDetails(props: {
                 })
               }
             />
-            <FormElement
+            <EditableElement
               title="doc file: "
-              inputValue={props.projectData.docFile}
+              inputValue={formData.docFile}
               type="file"
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            {/* <tr className="FormElement">
-              <td>
-                <label htmlFor="docFile">doc file: </label>
-              </td>
-              <td className="FileUpload">
-                <input className="FileUploadInput" type="file" id="docFile" />
-                <button>Choose document file</button>
-                <br />
-                {props.projectData.docFile}
-              </td>
-            </tr> */}
           </tbody>
         </table>
         <button
@@ -89,11 +86,11 @@ function ModifyProjectDetails(props: {
           type="submit"
           onClick={(e) => submitHandler(e)}
         >
-          Modify
+          Upload
         </button>
       </form>
     </>
   );
 }
 
-export default ModifyProjectDetails;
+export default UploadProjectDetails;

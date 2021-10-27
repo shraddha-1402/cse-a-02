@@ -1,5 +1,5 @@
 import { ChangeEvent } from "react";
-import FormElement from "../../../FormElement";
+import EditableElement from "../../../components/formElements/EditableElement";
 
 export default function EditEmployee() {
   return (
@@ -31,22 +31,22 @@ export default function EditEmployee() {
       <form action="">
         <table>
           <tbody>
-            <FormElement
+            <EditableElement
               title={"Name"}
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
-              title={"Date of birth"}
+            <EditableElement
+              title={"Date Of Birth"}
               type="date"
               inputValue={undefined}
               onInputChange={function (e: ChangeEvent<HTMLInputElement>) {
                 throw new Error("Function not implemented.");
               }}
             />
-            <FormElement
+            <EditableElement
               title={"E-mail"}
               type="email"
               inputValue={undefined}
