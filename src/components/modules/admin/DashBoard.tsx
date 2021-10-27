@@ -10,7 +10,7 @@ export default function DashBoard(props: {
   return (
     <div className="admin-dashboard">
       <h1>{props.title}</h1>
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th>Group number</th>

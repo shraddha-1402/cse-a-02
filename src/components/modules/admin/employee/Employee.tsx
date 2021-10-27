@@ -2,6 +2,8 @@ import { useState } from "react";
 import { ProjectData } from "../../../../types/main";
 import TabBar from "../../../navBar/TabBar";
 import AddEmployee from "./AddEmployee";
+import DeleteEmployee from "./DeleteEmployee";
+import EditEmployee from "./EditEmployee";
 
 export default function Employee(props: {
   projectData: ProjectData;
@@ -19,6 +21,8 @@ export default function Employee(props: {
         setPageBody={setEmployeeFunction}
       />
       {employeeFunction === "AddEmployee" && <AddEmployee />}
+      {employeeFunction === "EditEmployee" && <EditEmployee />}
+      {employeeFunction === "DeleteEmployee" && <DeleteEmployee />}
     </div>
   );
 }
