@@ -4,6 +4,7 @@ import TabBar from "../../../components/navBar/TabBar";
 import AddEmployee from "./AddEmployee";
 import DeleteEmployee from "./DeleteEmployee";
 import EditEmployee from "./EditEmployee";
+import "./index.css";
 
 export default function Employee(props: {
   projectData: ProjectData;
@@ -15,7 +16,7 @@ export default function Employee(props: {
   return (
     <div>
       <h1>{props.title}</h1>
-      <div>
+      <div className="sub-tab-list">
         <TabBar
           tabsList={tabsList}
           pageBody={employeeFunction}
