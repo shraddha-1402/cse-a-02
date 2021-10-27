@@ -5,14 +5,18 @@
 
 # Steps to run this app locally on your system
 
-1. Clone project to your local system
+1. Clone project to your local system.
+
    ```sh
    git clone https://github.com/atharva-u-01/cse-a-02.git
    ```
-2. Install npm dependencies
+
+2. Install npm dependencies.
+
    ```
    npm i
    ```
+
 3. Run the app in the development mode.
 
    ```
