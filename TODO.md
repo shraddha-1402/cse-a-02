@@ -1,5 +1,5 @@
 - [ ] /student?id=12u43096
-- [ ] SN profile ball pop up for sign out
+- [x] SN profile ball pop up for sign out
 - [x] `Welcome {firstname} {lastname}`
 
 - [x] contents
