@@ -50,6 +50,50 @@
       </div>
     </nav>
 
-    <main class="mw-48r m-2 p-1 mx-auto"></main>
+    <main class="mw-48r m-2 p-1 mx-auto">
+      <form action="" method="post">
+        <div class="flex-row justify-spc-bet align-center p-1">
+          <h1 class="center-text">Create Accounts</h1>
+          <a href="/Pages/SignUp.html" class="link">
+            <button class="btn btn-solid-primary" type="submit">
+              <i class="fas fa-save mr-0-25"></i>
+              Save
+            </button>
+          </a>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 1rem;
+          "
+        >
+          <label for="acc-type">Account type: </label>
+          <select class="input std-input" name="user" id="acc-type">
+            <option value="">Select</option>
+            <option value="student">Student</option>
+            <option value="progress-incharge">Progress Incharge</option>
+            <option value="project-incharge">Project Incharge</option>
+            <option value="investor" selected>Investor</option>
+          </select>
+          <label for="department">Department:</label>
+          <select class="input std-input" name="user" id="department">
+            <option value="" selected>Select</option>
+            <option value="student">CSE</option>
+            <option value="progress-incharge">IT</option>
+            <option value="project-incharge">Mechanical</option>
+            <option value="investor">Electronics</option>
+          </select>
+        </div>
+      </form>
+      <script>
+        const accType = document.getElementById("acc-type");
+        accType.addEventListener("change", () =>
+          window.location.replace(`./SignUp-${accType.value}.html`)
+        );
+      </script>
+      <!--  -->
+    </main>
   </body>
 </html>
