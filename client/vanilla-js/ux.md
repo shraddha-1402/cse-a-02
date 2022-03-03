@@ -1,0 +1,45 @@
+# flow
+
+- declare list of branch
+- declare rating threshold to show projects to investors
+- create accounts of investor
+- create accounts of prog.in.
+  - name
+  - username
+  - password
+  - branch
+- create accounts of p.in.
+  - name
+  - username
+  - password
+  - branch
+- create accounts of p.group
+  - group name or group number or username
+  - password
+  - leader
+    - name
+    - email
+    - unique number (reg. number or roll number)
+  - members
+    - name
+    - email
+    - unique number (reg. number or roll number)
+  - project incharge
+- login
+  - username
+  - password
+- student
+  - will input project info
+  - can chat
+- p.in.
+  - view applications for approval
+  - can chat
+  - approve
+- prog.in.
+  - view approved list
+  - give remarks and rating if any
+- p.group
+  - can view remark
+- investor
+  - can view projects which are more than some threshold
+  - can email using template where people add added in to and cc

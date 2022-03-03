@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="https://kit.fontawesome.com/f08ee55cc8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css" />
+  <title>Admin | Accounts</title>
+</head>
+
+<body>
+  <nav class="pos-sticky-t0 z-1">
+    <div class="nav pos-rel">
+      <a class="link flex-row align-center" href="./Admin.html">
+        <h1 class="nav-heading primary-text">Hello, Admin</h1>
+      </a>
+      <ul class="ml-auto list-style-none nav-menu">
+        <div class="pos-rel">
+          <a href="#" class="link nav-dropdown-link">
+            <li class="nav-link desktop-nav">Account</li>
+            <li class="fas fa-user icon small-icon nav-dropdown-link mobile-nav"></li>
+          </a>
+          <div class="nav-dropdown pos-abs">
+            <ul class="list-style-none">
+              <a href="#" class="link">
+                <li class="nav-dropdown-item">Profile</li>
+              </a>
+              <a href="#" class="link">
+                <li class="nav-dropdown-item">Logout</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- <a href="#" class="link">
+          <li class="nav-link desktop-nav">Wishlist</li>
+          <li class="fa fa-heart icon small-icon mobile-nav"></li>
+        </a>
+        <a href="#" class="link">
+          <li class="nav-link desktop-nav">Cart</li>
+          <li class="fas fa-shopping-cart icon small-icon mobile-nav"></li>
+        </a> -->
+      </ul>
+    </div>
+  </nav>
+
+  <main class=" mw-48r m-2 p-1 mx-auto">
+    <div class="flex-row justify-spc-bet align-center p-1">
+      <h1 class="center-text">
+        Create Accounts
+      </h1>
+      <a href="/Pages/SignUp.html" class="link">
+        <button class="btn btn-solid-primary">
+          <i class="fas fa-plus mr-0-25"></i>
+          Add</button>
+      </a>
+    </div>
+
+    <select class="input std-input" name="user" id="create-user">
+      <option value="student">Student</option>
+      <option value="progress-incharge">Progress Incharge</option>
+      <option value="project-incharge">Project Incharge</option>
+      <option value="investor">Investor</option>
+    </select>
+
+    <!--  -->
+
+  </main>
+
+</body>
+
+</html>

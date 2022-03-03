@@ -1,0 +1,8 @@
+@import url(https://swift-ui-library.netlify.app/style.css);
+@import url(./css//Navbar.css);
+@import url(./css/utility.css);
+
+:root {
+  --primary-color: purple;
+  --secondary-color: #e2e2e2;
+}

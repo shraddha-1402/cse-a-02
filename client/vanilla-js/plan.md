@@ -1,0 +1,73 @@
+- modules
+  - admin
+  - progress incharge
+  - project incharge
+  - project group
+  - investor
+- tasks/can do/allowed to do
+  - admin
+    - create users
+    - edit user
+    - delete user
+  - progress incharge
+    - see list of approved projects
+    - view details of each project
+    - give remarks to each project in each progress seminar
+      - ratings
+      - in app suggestions
+  - project incharge
+    - see list of groups/project that are under him/her
+    - approve project
+    - chat with project groups
+  - project group
+    - upload project data
+    - edit data
+    - view remarks/suggestions as in app notifications
+    - chat with project incharge
+  - investor
+    - view projects
+      - sorted by
+        - rating(default)
+    - interact with projects via mail
+      - to email id of project leader
+      - in cc
+        - project incharge
+        - progress incharge
+        - project group members except group leader
+- data not db
+  - project group
+    - group name or group number or username
+    - group password
+    - leader
+      - name
+      - email
+      - unique number (reg. number or roll number)
+    - members
+      - name
+      - email
+      - unique number (reg. number or roll number)
+    - project data
+      - project name
+      - short description (optional)
+      - ppt
+      - other optional files
+        - word doc
+        - project code
+    - project incharge
+    - progress incharge
+    - rating
+    - remarks/suggestions
+      - text
+      - timestamp
+  - project incharge
+    - name
+    - username
+    - password
+    - list of project group which are under him/her
+    - progress incharge
+  - progress incharge
+    - list of project incharge
+  - investor
+    - name
+    - funds to planning invest(optional)
+- ux
