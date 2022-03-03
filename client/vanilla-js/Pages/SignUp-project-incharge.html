@@ -69,20 +69,45 @@
             gap: 1rem;
           "
         >
-          <label for="acc-type">Account type: </label>
+          <label for="acc-type">Account type:</label>
           <select class="input std-input" name="user" id="acc-type">
-            <option value="" selected>Select</option>
-            <option value="-student">Student</option>
-            <option value="-progress-incharge">Progress Incharge</option>
-            <option value="-project-incharge">Project Incharge</option>
-            <option value="-investor">Investor</option>
+            <option value="">Select</option>
+            <option value="student">Student</option>
+            <option value="progress-incharge">Progress Incharge</option>
+            <option value="project-incharge" selected>Project Incharge</option>
+            <option value="investor">Investor</option>
           </select>
+          <label for="department">Department:</label>
+          <select class="input std-input" name="user" id="department">
+            <option value="" selected>Select</option>
+            <option value="student">CSE</option>
+            <option value="progress-incharge">IT</option>
+            <option value="project-incharge">Mechanical</option>
+            <option value="investor">Electronics</option>
+          </select>
+          <label for="name">Name:</label>
+          <div style="display: flex">
+            <div class="m-1 pos-rel w-50p" style="margin-left: 0">
+              <label for="first-name" class="input-label pos-abs"
+                >First Name</label
+              >
+              <input type="text" class="input std-input" id="first-name" />
+            </div>
+            <div class="m-1 pos-rel w-50p" style="margin-right: 0">
+              <label for="last-name" class="input-label pos-abs"
+                >Last Name</label
+              >
+              <input type="text" class="input std-input" id="last-name" />
+            </div>
+          </div>
+          <label for="email">Email:</label>
+          <input type="text" class="input std-input" id="email" />
         </div>
       </form>
       <script>
         const accType = document.getElementById("acc-type");
         accType.addEventListener("change", () =>
-          window.location.replace(`./SignUp${accType.value}.html`)
+          window.location.replace(`./SignUp-${accType.value}.html`)
         );
       </script>
       <!--  -->
