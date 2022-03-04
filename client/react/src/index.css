@@ -1,14 +1,30 @@
+@import url("https://swift-ui-library.netlify.app/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+@import url("./Components/Navbar/style.css");
+
+:root {
+  --primary-color: purple;
+}
+
+* {
+  font-family: "Merriweather", serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.active {
-  color: red;
+.content-body {
+  height: calc(100vh - 4rem);
+  overflow: auto;
+  padding: 1rem;
+}
+
+.card {
+  box-shadow: none;
+  border: 1px solid var(--gray);
 }
 
 code {
