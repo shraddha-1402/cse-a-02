@@ -1,0 +1,50 @@
+.mw-48r {
+  max-width: 48rem;
+}
+
+.mw-54r {
+  max-width: 54rem;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.form-template {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+textarea {
+  border-width: 1;
+  min-height: 8rem;
+  padding: 1rem;
+  font-size: 1em;
+  resize: none;
+}
+
+.modal-box {
+  display: flex;
+}

@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
+import logoImg from "../../assets/logo.jpg";
 
-const Navbar = () => {
+const Navbar = ({ link }: { link: string }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <nav className="nav">
-      <Link className="link" to="/">
-        <h1 className="nav-heading m-0-5">NAF Dashboard</h1>
+      <Link className="link flex-row align-center" to={link}>
+        <div className="logo-container">
+          <img src={logoImg} alt="logo" className="responsive-img" />
+        </div>
+        <h1 className="nav-heading m-0-5">PAS</h1>
       </Link>
       <ul className="ml-auto list-style-none m-0-5">
         <div className="pos-rel">

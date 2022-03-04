@@ -1,13 +1,10 @@
 @import url("https://swift-ui-library.netlify.app/style.css");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+@import url("./styles/utility.css");
 @import url("./Components/Navbar/style.css");
 
 :root {
   --primary-color: purple;
-}
-
-* {
-  font-family: "Merriweather", serif;
 }
 
 body {
